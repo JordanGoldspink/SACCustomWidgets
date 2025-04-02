@@ -38,12 +38,12 @@
             // Load DHTMLX Gantt CSS
             const dhtmlxGanttCSS = document.createElement('link');
             dhtmlxGanttCSS.rel = 'stylesheet';
-            dhtmlxGanttCSS.href = 'https://github.com/JordanGoldspink/SACCustomWidgets/blob/main/JGSACGantt.css';
+            dhtmlxGanttCSS.href = 'https://cdn.jsdelivr.net/npm/frappe-gantt/dist/frappe-gantt.css';
             this._shadowRoot.appendChild(dhtmlxGanttCSS);
 
             // Load DHTMLX Gantt
             const dhtmlxGanttScript = document.createElement('script');
-            dhtmlxGanttScript.src = 'https://github.com/JordanGoldspink/SACCustomWidgets/blob/main/JGSACGantt.js';
+            dhtmlxGanttScript.src = 'https://cdn.jsdelivr.net/npm/frappe-gantt/dist/frappe-gantt.umd.js';
             dhtmlxGanttScript.onload = () => {
                 this._dhtmlxGanttReady = true;
                 this._renderChart();
